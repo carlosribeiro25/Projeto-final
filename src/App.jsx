@@ -1,22 +1,14 @@
-import { useState } from 'react'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import './App.css';
+import Logo from './components/Logo'; 
 
+ export default function App() {
   return (
     <>
-    <h1>Olá mundo</h1>
-    
-    
-      
-      
-        
-        
-     
-      
+      <Logo />
     </>
-  )
+  );
 }
 
-export default App
+
+
