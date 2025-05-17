@@ -1,11 +1,19 @@
-
 import './App.css';
-import Logo from './components/Logo'; 
+import ProductListing from './Components/ProductListing'
 
  export default function App() {
   return (
     <>
-      <Logo />
+    <ProductListing />
+    
+    
+    
+
+    
+   
+ 
+      
+     
     </>
   );
 }

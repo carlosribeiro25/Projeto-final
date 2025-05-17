@@ -1,6 +1,13 @@
+import Logo from './components/Logo'; 
+import NavLink from './components/NavLink';
 export default function Header() {
     return (
-        <h1>ola</h1>
+        <>
+        <Logo />
+        <NavLink/>
+
+        </>
+       
 
     );
 }
