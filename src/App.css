@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.link-nav {
+  margin-left: 20px;  
+  
+  color: #C92071 ;
+}

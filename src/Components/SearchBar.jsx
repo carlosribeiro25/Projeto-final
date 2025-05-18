@@ -12,6 +12,12 @@ export default function SearchBar() {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
  
 
   return (

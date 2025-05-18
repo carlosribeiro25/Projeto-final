@@ -1,15 +1,13 @@
 import './App.css';
-import  NavLink   from './Components/NavLink';
-import { Outlet } from 'react-router-dom';
-import ProductListing from './Components/ProductListing'
 import SearchBar from './Components/SearchBar'
+import NavLink  from './Components/NavLink'
  export default function App() {
   return (
     <>
-    <NavLink />
-    <Outlet />
-    <ProductListing/>
-    < SearchBar/>
+    
+    <NavLink/>
+    <SearchBar/>
+    
     </>
   );
 }
