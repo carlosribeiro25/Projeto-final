@@ -1,7 +1,9 @@
+import "./ProductListing.css"
+
 export default function ProductListing() {
     return (
         <div className="product-list">
-            <h3>Filtrar por</h3>
+            <h3 className="text-xl font-medium text-black dark:text-white ">Filtrar por</h3>
             <div className="product-marcas">
               <input type="checkbox" name="Nike" id="" />
               <label htmlFor="">Adidas</label>
@@ -10,7 +12,7 @@ export default function ProductListing() {
                 <input type="checkbox" name="Nike" id="" />
                 <label htmlFor="">Puma </label>
                  <input type="checkbox" name="" id="" />
-                  <input type="button" value="" />
+                  
             </div>
             
         </div>
