@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  gap: 1rem;
+  flex-wrap: wrap; /* opcional para responsividade */
+}
+
+.link-login {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-login {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color:#C92071;
+  color: white;
+}
+
+.btn-cadastro {
+padding: 0.5rem 1rem;
+color: #474747 ;
+font-size: larger;
+text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}

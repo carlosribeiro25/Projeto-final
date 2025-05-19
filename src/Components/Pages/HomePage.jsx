@@ -1,9 +1,9 @@
-import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
     return (
         <div>
-            <NavLink />
+            <h1>Ola mundo</h1>
+           
         </div>
     );
 };

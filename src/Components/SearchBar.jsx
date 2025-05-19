@@ -21,17 +21,17 @@ export default function SearchBar() {
  
 
   return (
-    <div className="flex items-center border border-gray-300 rounded-2xl px-4 py-2 w-full max-w-md shadow-sm">
+    <div className="flex items-left border border-gray-300 rounded-3xl px-9 py-2 w-full max-w-md shadow-sm">
       <input
         type="text"
         placeholder="Buscar produtos..."
-        className="flex-grow outline-none bg-transparent text-base"
+        className="flex-grow  outline-none bg-transparent text-base"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={handleSearch} className="ml-2 text-gray-600 hover:text-black">
-        <Search className="w-5 h-5" />
+      <button onClick={handleSearch} className="ml-2 text-gray-300 hover:text-black">
+        <Search className="w-5 h-8" />
       </button>
     </div>
   );
