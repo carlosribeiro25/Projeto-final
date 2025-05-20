@@ -1,15 +1,19 @@
+
 import './App.css';
-import HomePage from './Components/Pages/HomePage';
-import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer.jsx';
+import FilterGroup from './Components/filtergroup/FilterGroup.jsx'
+import Header from './Components/Header/Header.jsx';
 export default function App() {
   return (
     <>
-    <Header/>
-    <HomePage/>
-   
     
+    <Header/>
+    <FilterGroup/><br />
+    <Footer/>
 
- 
+    
+    
+    
     
     </>
   );

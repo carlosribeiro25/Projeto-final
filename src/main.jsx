@@ -4,10 +4,10 @@ import './App.css';
 import App from './App.jsx';
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from './Components/Pages/HomePage.jsx';
-import ProductListing from './Components/ProductListing.jsx';
-import ProductListingPage from './Components/Pages/ProductListingPage.jsx';
+import Header from './Components/Header/Header.jsx';
 
+import ProductListingPage from './Components/Pages/ProductListingPage.jsx';
+import HomePage from './Components/Pages/HomePage.jsx'; // ✅ Importação adicionada
 
 const router = createBrowserRouter([
   {
@@ -22,11 +22,8 @@ const router = createBrowserRouter([
         path: "/Produtos",
         element: <ProductListingPage />
       },
-      
-      
     ],
   },
-
 ]);
 
 createRoot(document.getElementById('root')).render(
