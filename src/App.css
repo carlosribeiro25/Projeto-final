@@ -1,22 +1,7 @@
 @import "tailwindcss";
 
 
-.link-nav {
-  margin-left: 20px;  
-  
-  color: #C92071 ;
-}
 
-.btn-primary {
-  border: 1px solid;
-  color: white;
-  background-color: #C92071;
-  padding: 6px;
-  width: 80px;
-  border-radius: 6px;
-}
 
-.btn-cadastro{
-  color: #474747;
 
-}
+

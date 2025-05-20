@@ -5,7 +5,7 @@
   padding: 1rem 2rem;
   background-color: #f9f9f9;
   gap: 1rem;
-  flex-wrap: wrap; /* opcional para responsividade */
+  flex-wrap: wrap; 
 }
 
 .link-login {
@@ -19,16 +19,22 @@
   border-radius: 4px;
   background-color:#C92071;
   color: white;
+  font-weight: 600;
+  
 }
 
 .btn-cadastro {
 padding: 0.5rem 1rem;
-color: #474747 ;
-font-size: larger;
-text-decoration: underline;
+color:  #474747 ;
+font-size: 18px;
 }
 
 .nav-links {
   display: flex;
   gap: 1rem;
+  
+}
+.link-nav {
+  margin-left: 20px;  
+  color: #C92071 ;
 }
