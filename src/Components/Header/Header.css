@@ -14,12 +14,16 @@
 }
 
 .btn-login {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem ;
   text-decoration: none;
   border-radius: 4px;
   background-color:#C92071;
   color: white;
   font-weight: 600;
+  width: 112px;
+  height: 40px;
+  font-size: 16px;
+
   
 }
 
