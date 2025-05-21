@@ -1,5 +1,9 @@
-import React from 'react';
 
+
+
+
+
+import Header from '../Header/Header';
 const produtos = [
   { id: 1, nome: 'Camiseta', preco: 49.90 },
   { id: 2, nome: 'Tênis', preco: 199.90 },
@@ -9,6 +13,7 @@ const produtos = [
 export default function ProductListingPage() {
   return (
     <div>
+      <Header/>
       <h1>Lista de Produtos</h1>
       <ul>
         {produtos.map(produto => (

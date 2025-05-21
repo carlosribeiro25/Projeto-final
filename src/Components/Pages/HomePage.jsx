@@ -1,11 +1,20 @@
-// HomePage.jsx
+ 
+import Header from '../Header/Header'
 
-function HomePage() {
+  export  default function HomePage() {
+
   return (
-    <div>
-      <h1>Bem-vindo à Home Page!</h1>
-    </div>
+    <>
+      
+      
+      <Header />
+    
+      
+      
+      </>
+    
+
   );
 }
 
-export default HomePage; // ✅ exportação default
+

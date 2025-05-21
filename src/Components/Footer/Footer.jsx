@@ -46,7 +46,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>© 2022 Digital College</p>
+                    <p>© 2025 Digital College</p>
                 </div>
             </div>
         </footer>

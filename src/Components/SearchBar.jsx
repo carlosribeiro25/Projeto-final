@@ -18,8 +18,6 @@ export default function SearchBar() {
     }
   };
 
- 
-
   return (
     <div className="flex items-left border border-gray-300 rounded-2xl px- py-4  w-md shadow-sm">
       <input

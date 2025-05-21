@@ -1,8 +1,8 @@
 
 import logoImage from "../assets/logo-header.svg";
-
  const  Logo = () => {
     return (
+        
         <img 
         src= {logoImage} 
         alt="Logomarca do pagina"
