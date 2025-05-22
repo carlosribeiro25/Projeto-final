@@ -28,7 +28,7 @@ export default function SearchBar() {
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
       />
-      <button onClick={handleSearch} className="ml-2 text-gray-300 hover:text-black">
+      <button onClick={handleSearch} className="ml-2 text-gray-400 hover:text-#474747 cursor-pointer">
         <Search className="w-5 h-8" />
       </button>
     </div>

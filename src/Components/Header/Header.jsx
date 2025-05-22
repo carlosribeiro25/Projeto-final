@@ -1,7 +1,7 @@
 import './Header.css';
 import Logo from '../Logo';
-import NavLink from '../NavLink';
 import SearchBar from '../SearchBar';
+import Navegation from '../Navegation';
 
 
 export default function Header() {
@@ -17,7 +17,8 @@ export default function Header() {
         
         <a href="">Mini-cart</a>
         </div>
-        <NavLink />
+        <Navegation/>
+       
         
          </div>
 

@@ -3,7 +3,7 @@
 export default function ProdutoCard(){
     return (
         <>
-            <div className="bg-gray-100 w-3xs  grid-rows-<6>">
+            <div className="bg-gray-100 p-1.5  cols-1 gap-4 w-3xs ">
                 
               <img className="cursor-pointer rounded-xl" src="https://th.bing.com/th/id/OPHS.ECXLkmuQhvjvdQ474C474?w=248&h=248&c=17&o=5&pid=21.1"
               

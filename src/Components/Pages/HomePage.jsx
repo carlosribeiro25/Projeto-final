@@ -1,16 +1,12 @@
- import Header from '../Header/Header';
-import ProdutoCard from '../ProdutoCard';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
   export  default function HomePage() {
 
   return (
     <>
     <Header/>
-    <ProdutoCard/>
-      
-     
+    <Footer/>
     
-      
-      
       </>
     
 
