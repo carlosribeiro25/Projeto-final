@@ -1,9 +1,11 @@
-import "./filterGroup.css";
+
+import "./FilterGroup.css";
+
 export default function FilterGroup() {
     return (
       <>
        <div className="select-option ">            
-            <select className="option" name="" id="">
+            <select className="option "name="" id="">
               <option value="">Mais relevante</option>
               <option value="">Produtos em promoção</option>
               <option className="option" value="">Mais relevante</option>

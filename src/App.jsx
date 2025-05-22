@@ -2,8 +2,9 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import HomePage from './Components/Pages/HomePage';
-import ProductListingPage from './Components/Pages/ProductListingPage'
-import ProductViewPage from './Components/Pages/ProductViewPage'
+import ProductListingPage from './Components/Pages/ProductListingPage';
+import ProductViewPage from './Components/Pages/ProductViewPage';
+
 export default function App() {
   return (
     <>
@@ -22,6 +23,9 @@ export default function App() {
       </Routes>
 
     </Router>
+    
+    
+
 
     </>
   );

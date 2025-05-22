@@ -1,12 +1,25 @@
 
+  
 export default function ProdutoCard(){
     return (
         <>
-        <section>
-            <div className="produto-card">
-              <img src="{}" alt="" />
+            <div className="bg-gray-100 w-3xs  grid-rows-<6>">
+                
+              <img className="cursor-pointer rounded-xl" src="https://th.bing.com/th/id/OPHS.ECXLkmuQhvjvdQ474C474?w=248&h=248&c=17&o=5&pid=21.1"
+              
+               alt="" 
+               width={292}
+               height={321}
+                  />
+                  <p className="text-lime-700 cursor-pointer text-ms font-bold "> Tênis </p>
+                  <p className=" font-bold " >Tênis Nike-13 Feminino</p>
+                  
+                  <s className="text-gray-500 cursor-pointer text-lg ">$200</s><span className=" cursor-pointer font-black"> $ 100</span>
+             
+
             </div>
-        </section>
+            
+        
         </>
     )
 }
