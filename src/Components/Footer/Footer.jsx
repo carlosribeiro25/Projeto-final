@@ -6,9 +6,20 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-content">
                     <div className="footer-section">
-                        <h2 className="footer-title">Digital Store</h2>
+                        <h2 className="footer-title">Botar img Digital Store</h2>
                         <div className="footer-links">
-                            <a href="#" className="footer-link">Informação</a>
+                    <p className=" max-w-2xs">
+                           Lorem, ipsum dolor sit amet consectetur ad
+                           ipisicing elit. Distinctio beatae cum
+                           , alias rerum quidem quae a. Asperiores
+                            laborum commodi tenetur animi, 
+                            
+                             </p>
+                             <div className="rede-social">
+                                <button >Botão</button><br />
+                                <button>Botão</button><br />
+                                <button>Botão</button>
+                             </div>
                         </div>
                     </div>
 
@@ -38,8 +49,9 @@ export default function Footer() {
                     <div className="footer-section">
                         <h2 className="footer-title">Contato</h2>
                         <div className="contact-info">
-                            <p>Av. Santos Dumont, 1510 - 1º andar - Aldeota,</p>
-                            <p>Fortaleza - CE, 60150-161</p>
+                            <p>Av. Santos Dumont, 1510 - 1</p> 
+                            <p>andar - Aldeota,Fortaleza -</p>
+                            <p> CE, 60150-161</p>
                             <p>(85) 3051-3411</p>
                         </div>
                     </div>

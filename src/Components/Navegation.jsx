@@ -8,7 +8,7 @@ const Navegation = () => {
         end
         className={({ isActive }) =>
           isActive
-            ? "text-[#C92071] border-b-2 border-[#C92071] pb-1"
+            ? "text-[#C92071]  border-b-2 border-[#C92071] pb-1"
             : "text-gray-700 hover:text-[#C92071] pb-1"
         }
       >
