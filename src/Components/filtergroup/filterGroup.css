@@ -1,27 +1,8 @@
 
-.select-option {
-    width: 200px;
-    border: 1px solid;
-    border-radius: 4px;
-    height: 55px;
-    margin-top: 10px ;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    border: none;
-    background-color: white;
-    text-align: center;
-    margin-left: 50px;
-}
-.container-main{
-    
-    background-color: white;
-    width: 200px;
-    margin-left: 50px;
-    
-}
- label{
+.container-products{
     margin-left: 20px;
- }
+}
+
  .text{
     margin-left: 10px;
     margin-top: 2px;

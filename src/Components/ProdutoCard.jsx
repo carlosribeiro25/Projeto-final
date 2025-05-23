@@ -5,7 +5,7 @@ export default function ProdutoCard(){
         <>
             <div className="bg-gray-100 p-1.5  cols-1 gap-4  ">
                 
-              <img className="cursor-pointer rounded-xl" src="https://th.bing.com/th/id/OPHS.ECXLkmuQhvjvdQ474C474?w=248&h=248&c=17&o=5&pid=21.1"
+              <img className="cursor-pointer rounded-md" src="https://th.bing.com/th/id/OPHS.ECXLkmuQhvjvdQ474C474?w=248&h=248&c=17&o=5&pid=21.1"
               
                alt="" 
                width={292}

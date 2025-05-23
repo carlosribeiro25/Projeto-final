@@ -3,18 +3,15 @@
 export default function FilterGroup() {
     return (
       <>
-       
-    
-        <section className="container-main"> 
-  
-      <div className="bg-white w-60  container-products p-10 ">
+   
+      <div className="bg-pink-200 ml-70  w-50 rounded-sm h-120  container-products p-10 ">
         <div className=" filter space-y-2">
-          <div className=" bg-yellow-400 filter font-bold text filter-title ">
+          <div className=" filter font-bold text filter-title ">
             <p className="text-lg">Filtrar por</p>
           </div>
             
 
-            <div className="marca bg-blue-400 ">
+            <div >
           <p className="font-bold text " >Marca</p>
 
           <label className="flex items-center gap-2">
@@ -96,7 +93,7 @@ export default function FilterGroup() {
 
         </div>
       </div>
-    </section>
+   
      </>
 
     )
