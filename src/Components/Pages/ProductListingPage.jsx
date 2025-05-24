@@ -1,7 +1,8 @@
-import FilterGroup from '../FilterGroup/FilterGroup';
+
 import Header from '../Header/Header';
-import Footer from '../footer/Footer';
-import  ProductListing from '../ProductListing';
+import Footer from '../Footer/Footer';
+import FilterGroup from '../FilterGroup/FilterGroup';
+import ProductListing from '../ProductListing'
  
 export default function ProductListingPage() {
   return (
@@ -20,9 +21,10 @@ export default function ProductListingPage() {
       </select>
       </div>
       <div className=' gap-14  flex  py-4'>
-        <FilterGroup/>
-       
+        <section></section><FilterGroup/>
+        <ProductListing/>
       </div>
+
       
       
       <br />
