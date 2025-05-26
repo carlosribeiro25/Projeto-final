@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navegation = () => {
   return (
+    <>
     <nav className="flex gap-8 mt-4 text-lg font-bold">
       <NavLink
         to="/"
@@ -45,6 +46,10 @@ const Navegation = () => {
         Meus Pedidos
       </NavLink>
     </nav>
+
+   
+
+    </>
   );
 };
 

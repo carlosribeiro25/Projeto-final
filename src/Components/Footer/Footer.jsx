@@ -1,3 +1,5 @@
+import { TwitterLogo , InstagramLogo, FacebookLogo } from "@phosphor-icons/react";
+import LogoFooter from '../LogoFooter';
 import "./Footer.css";
 
 export default function Footer() {
@@ -6,8 +8,10 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-content">
                     <div className="footer-section">
-                        <h2 className="footer-title">Botar img Digital Store</h2>
+                        <img src="" alt="" />
                         <div className="footer-links">
+                         <LogoFooter/>  
+                        
                     <p className=" max-w-2xs">
                            Lorem, ipsum dolor sit amet consectetur ad
                            ipisicing elit. Distinctio beatae cum
@@ -15,16 +19,21 @@ export default function Footer() {
                             laborum commodi tenetur animi, 
                             
                              </p>
-                             <div className="rede-social">
-                                <button >Botão</button><br />
-                                <button>Botão</button><br />
-                                <button>Botão</button>
+                             <div className="rede-social flex flex-row gap-4">
+                               
+                                   
+                                     <FacebookLogo size={36} />
+     
+                                        <InstagramLogo size={36} />
+      
+                                        <TwitterLogo size={36} />
+
                              </div>
                         </div>
                     </div>
 
                     <div className="footer-section">
-                        <h2 className="footer-title">Institucional</h2>
+                        <h2 className="footer-title">Informação</h2>
                         <div className="footer-links">
                             <a href="#" className="footer-link">Sobre Drip Store</a>
                             <a href="#" className="footer-link">Segurança</a>
