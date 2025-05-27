@@ -10,7 +10,7 @@ export default function ProductListingPage() {
       
       <Header /><br />
       
-      <div className=" flex mt-4 h-20 gap-x-50  justify-around text  fz-16 bg-gray-100">
+      <div className=" flex mt-4 h-20 gap-x-50  justify-around text  fz-16 bg-gray-200">
         
       <h2> <strong>Resultado para "Tênis" </strong> - 389 Produtos </h2>
       <select className="w-70 h-15 border-1  " aria-label="Default select example">
@@ -20,8 +20,8 @@ export default function ProductListingPage() {
 
       </select>
       </div>
-      <div className=' gap-14  flex  py-4'>
-        <section></section><FilterGroup/>
+      <div className=' justify-around  gap-10  flex  py-4'>
+        <FilterGroup/>
         <ProductListing/>
       </div>
 

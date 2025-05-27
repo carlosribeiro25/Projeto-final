@@ -2,7 +2,7 @@ export default function FilterGroup() {
   const marcas = ["batata", "Jordan", "Nike", "Puma"];
   const categorias = ["Esporte", "Casual", "Utilitário", "Corrida"];
   const generos = ["Masculino", "Feminino", "Unisex"];
-  const estados = ["Novo", "Usado"];
+  
 
   return (
 
