@@ -1,11 +1,17 @@
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import Gallery from '../Gallery';
 
   export  default function HomePage() {
 
   return (
     <>
-    <Header/><br />
+    <Header/>
+    <Gallery/>
+    <br />
+    <br />
+    
+    
    
     
 

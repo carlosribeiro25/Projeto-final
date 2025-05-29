@@ -1,20 +1,22 @@
 export default function FilterGroup() {
-  const marcas = ["batata", "Jordan", "Nike", "Puma"];
+  const marcas = ["Penalty", "Jordan", "Nike", "Puma"];
   const categorias = ["Esporte", "Casual", "Utilitário", "Corrida"];
   const generos = ["Masculino", "Feminino", "Unisex"];
   
 
   return (
 
-    <div className="bg-white p-10 w-50 h-140 rounded-sm container-products">
+    <div className="bg-white justify-items-center p-10 w-30 h-140 rounded-sm container-products">
       <div className="   mt-16 py-8  font-bold">
+        <br />
       <p >Filtrar por </p>
+      <hr />
       </div>
-<br />
+      <br />
         <div>
           <p className="mt-2 font-bold">Marca</p>
           {marcas.map((marca, idx) => (
-            <label key={idx} className="flex items-center gap-2 ml-14 cursor-pointer">
+            <label key={idx} className="flex items-center gap-2 m cursor-pointer">
               <input
                 type="checkbox"
                 name="marca"
@@ -98,11 +100,11 @@ export default function FilterGroup() {
       <input
         type="radio"
         name="estado"
-        className="peer hidden gap-4"
+        className="peer hidden gap-2"
         value={estado}
       />
       <div className="w-5 h-5 border-2 border-gray-400 rounded-full peer-checked:bg-pink-500 peer-checked:border-pink-500 flex items-center justify-center">
-        <div className="w-2.5 h-2.5 bg-white rounded-full hidden peer-checked:block"></div>
+        <div className="w-2.5 h-2.5 bg-white rounded-full  peer-checked:block"></div>
       </div>
       <span>{estado}</span>
     </label>

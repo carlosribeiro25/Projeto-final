@@ -15,7 +15,7 @@ export default function Footer() {
                            Lorem, ipsum dolor sit amet consectetur ad
                            ipisicing elit. Distinctio beatae cum
                            , alias rerum quidem quae a. Asperiores
-                            laborum commodi tenetur animi, 
+                            laborum commodi tenetur animi,a,inaiiiii 
                             
                              </p>
                              <div className="rede-social flex flex-row gap-4">

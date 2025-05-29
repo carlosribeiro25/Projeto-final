@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-
 const Navegation = () => {
   return (
     <>
@@ -26,17 +25,15 @@ const Navegation = () => {
         Produtos
       </NavLink>
       <NavLink
-        to="/categorias"
+        to="/ProductViewPage" 
         className={({ isActive }) =>
           isActive
             ? "text-[#C92071] border-b-2 border-[#C92071] pb-1"
-            : "text-gray-700 hover:text-[#C92071] pb-1"
-        }
-      >
+            : "text-gray-700 hover:text-[#C92071] pb-1"}>
         Categorias
       </NavLink>
       <NavLink
-        to="/meuspedidos"
+        to="/Meuspedidos"
         className={({ isActive }) =>
           isActive
             ? "text-[#C92071] border-b-2 border-[#C92071] pb-1"

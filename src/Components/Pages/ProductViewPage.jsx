@@ -1,7 +1,20 @@
-const ProductViewPage = () => {
+import Input from '../Form/Input';
+import PasswordInput from '../Form/PasswordInput';
+ const ProductViewPage = () => {
     return (
-        <h3> olaaaaaaaaaaaa</h3>
+        <>
+        <form className='w-4xl' action="" method="post">
+            <label htmlFor="cadastro">Email *</label>
+            <Email> Ola mundo </Email>
+            <Input/>
+            <PasswordInput/>
+
+
+
+        </form>
+        </>
     )
 }
+
 
 export default ProductViewPage;

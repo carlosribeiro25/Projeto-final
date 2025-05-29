@@ -21,9 +21,9 @@ export default function SearchBar() {
   return (
     <div className="flex items-left border border-gray-300 rounded-2xl px-4 py-4  w-md shadow-sm">
       <input
-        type="text"
+        type="text"  style={{ textIndent: '1.2rem' }}
         placeholder="Buscar produtos..."
-        className="flex-grow h-12 p-80 ml-2 outline-none bg-transparent text-base"
+        className=" flex-grow h-12 p-80 ml-2 outline-none bg-transparent text-base"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
