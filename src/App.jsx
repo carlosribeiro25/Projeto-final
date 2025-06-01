@@ -6,7 +6,7 @@ import ProductListingPage from './Components/Pages/ProductListingPage';
 import Login from './Components/Pages/Login';
 import Cadastro from './Components/Pages/Cadastro';
 import MeusPedidos from './Components/MeusPedidos/MeusPedidos';
-import Carrinho from './Components/Carrinho';
+
 
 
 
@@ -23,7 +23,7 @@ export default function App() {
         <Route path='/Cadastro' element={<Cadastro/>}/>
         <Route path="/Meuspedidos" element={<MeusPedidos/>}> </Route>
         <Route path="/Produtos" element={<ProductListingPage/>}></Route>
-        <Route path='/Carrinho' element={<Carrinho/>}/>
+        
          
 
 
