@@ -17,7 +17,6 @@ export default function App() {
     <Router>
       <Routes> 
         <Route path="/"element={<HomePage/>}/>
-        <Route path="/Categorias" element={<ProductViewPage/>} />
         <Route path="/Login" element={<Login/>}/>
         <Route path='/Cadastro' element={<Cadastro/>}/>
         <Route path="/Meuspedidos" element={<MeusPedidos/>}> </Route>
