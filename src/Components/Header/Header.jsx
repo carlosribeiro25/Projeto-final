@@ -1,13 +1,14 @@
 import './Header.css';
 import Logo from '../Logo';
 import SearchBar from '../SearchBar';
-import Carrinho from '../carrinho';
+import Carrinho from '../components/Carrinho';
 import Navegation from '../Navegation';
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
 
 
 export default function Header() {
+
 
     const [mostrarCarrinho, setMostrarCarrinho] = useState(false);
     
@@ -26,6 +27,7 @@ export default function Header() {
             
             <Navegation />
              <Carrinho isVisible={mostrarCarrinho} onClose={() => setMostrarCarrinho(false)} />
+            
         </header>
     );
 }
