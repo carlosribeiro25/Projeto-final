@@ -213,3 +213,4 @@ export async function adicionarAoCarrinho(productId) {
     return false
   }
 }
+

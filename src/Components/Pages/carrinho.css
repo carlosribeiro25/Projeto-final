@@ -15,7 +15,7 @@
   --white: #ffffff;
 }
 
-/* Carrinho Container */
+
 .carrinho-overlay {
   position: fixed;
   top: 0;
@@ -60,7 +60,7 @@
   transform: translateY(-50%) translateX(0);
 }
 
-/* Header do Carrinho */
+
 .carrinho-header {
   display: flex;
   justify-content: space-between;
@@ -89,7 +89,7 @@
   background-color: var(--light-gray-3);
 }
 
-/* Lista de Itens */
+
 .carrinho-itens {
   flex: 1;
   overflow-y: auto;
