@@ -18,6 +18,7 @@ export default function ProductListingPage() {
 
         </select>
       </div>
+      
       <div className=' justify-around  gap-10  flex  py-4'>
         <FilterGroup />
         <ProductListing />

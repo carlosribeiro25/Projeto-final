@@ -6,6 +6,11 @@ body {
 
 }
 
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  color: #46484d; 
+}
+
 
 
 

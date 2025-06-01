@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 export default function Login() {
   return (
     <>
-      <main className='bg-blue-300'>
+      <main className='bg-gray-300'>
      <div className="pl-16"> 
     <div className='bg-white pl-8  justify-center gap-10 shadow-xl p-10 flex h-20 '>
         < Logo />

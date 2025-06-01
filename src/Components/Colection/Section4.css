@@ -1,0 +1,72 @@
+.last-sect {
+width: 100%;
+height: 400px;
+background-color: white;
+position: absolute;
+overflow: hidden;
+z-index: 1;
+}
+
+.info-last-sect {
+  margin-left: 100px;
+  margin-top: -200px;
+}
+
+.last-sect-imgs {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+.principal {
+  width: 450px;
+  margin-top: 90px;
+}
+
+.fundo {
+  position: absolute;
+  width: 440px;
+  height: 380px;
+  bottom: -140px;
+  right: -320px;
+}
+
+.info {
+  max-width: 400px;
+}
+
+.titulo-pequeno {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary, #FF4C4C);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.titulo-grande {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--dark-gray-2);
+}
+
+.descricao {
+  font-size: 17px;
+  color: var(--light-gray);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+#produtos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.last-sect .btnrosa2 {
+  margin-top: 5px;
+}

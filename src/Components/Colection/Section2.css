@@ -1,0 +1,98 @@
+
+
+
+.cards-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card1, .card2, .card3 {
+  width: 400px;
+  height: 235px;
+  background-color: #B5B6F2;
+  position: relative;
+  padding: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.card1-content, .card2-content, .card3-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.percent {
+  position: relative;
+  margin-bottom: 35px;
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: #E7FF86;
+  color: var(--dark-gray-2);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  width: 115px;
+  display: flex;
+  justify-content: center;
+}
+
+.percent2 {
+  position: absolute;
+  margin-top: -20px;
+  padding: 10px;
+  border-radius: 100px;
+  border: none;
+  background-color: #E7FF86;
+  color: var(--dark-gray-2);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+   z-index: 10;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--dark-gray);
+  margin-top: -30px;
+}
+
+.card1-btn {
+  margin-bottom: 30px;
+  
+  
+}
+
+.btnbranco {
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  width: 140px;
+  background-color: white;
+  color: #C92071;
+  margin-bottom: 30px ;
+}
+
+.card1-image, .card2-image, .card3-image {
+  position: absolute;
+  width: 280px;  
+  left: 200px;
+  transform: rotate(-20.78deg);
+}

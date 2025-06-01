@@ -7,6 +7,8 @@ import ProductViewPage from './Components/Pages/ProductViewPage';
 import Login from './Components/Pages/Login';
 import Cadastro from './Components/Pages/Cadastro';
 import MeusPedidos from './MeusPedidos/MeusPedidos';
+import Carrinho from './Components/Carrinho';
+
 
 
 export default function App() {
@@ -20,15 +22,14 @@ export default function App() {
         <Route path="/Categorias" element={<ProductViewPage/>} />
         <Route path="/Login" element={<Login/>}/>
         <Route path='/Cadastro' element={<Cadastro/>}/>
-        <Route path="/Meus pedidos" element={<MeusPedidos/>}> </Route>
+        <Route path="/Meuspedidos" element={<MeusPedidos/>}> </Route>
+        <Route path='/Carrinho' element={<Carrinho/>}></Route>
+
 
       </Routes>
 
     </Router>
     
-    
-
-
     </>
   );
 }

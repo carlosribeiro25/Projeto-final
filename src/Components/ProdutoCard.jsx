@@ -11,11 +11,9 @@ export default function ProdutoCard() {
                     width={292}
                     height={321}
                 />
-
                 <div className="bg-gray-200">
                     <p className="text-lime-700 cursor-pointer text-ms font-bold "> Tênis </p>
                     <p className=" font-bold " >Tênis Nike-13 Feminino</p>
-
                     <s className="text-gray-500 cursor-pointer text-lg ">$200</s><span className=" cursor-pointer font-black"> $ 100</span>
                 </div>
 

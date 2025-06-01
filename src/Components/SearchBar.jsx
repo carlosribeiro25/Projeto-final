@@ -8,7 +8,8 @@ export default function SearchBar() {
 
   const handleSearch = () => {
     if (query.trim()) {
-      navigate(`/products?search=${encodeURIComponent(query.trim())}`);
+      navigate(`/produtos?search=${encodeURIComponent(query.trim())}`);
+      
     }
   };
 
