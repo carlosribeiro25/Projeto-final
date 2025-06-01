@@ -4,7 +4,7 @@ import SearchBar from '../SearchBar';
 import Navegation from '../Navegation';
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
-import Carrinho from "../carrinho"
+import Carrinho from '../Carrinho';
 
 export default function Header() {
     return (

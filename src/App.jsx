@@ -16,11 +16,13 @@ export default function App() {
     
     <Router>
       <Routes> 
+        
         <Route path="/"element={<HomePage/>}/>
         <Route path="/Login" element={<Login/>}/>
         <Route path='/Cadastro' element={<Cadastro/>}/>
         <Route path="/Meuspedidos" element={<MeusPedidos/>}> </Route>
         <Route path='/Carrinho' element={<Carrinho/>}></Route>
+        <Route path="/Produtos" element={<ProductListingPage/>}></Route> 
 
 
       </Routes>
