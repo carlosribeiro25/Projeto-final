@@ -6,7 +6,7 @@ import ProductListingPage from './Components/Pages/ProductListingPage';
 import Login from './Components/Pages/Login';
 import Cadastro from './Components/Pages/Cadastro';
 import MeusPedidos from './Components/MeusPedidos/MeusPedidos';
-import Carrinho from './Carrinho';
+import Carrinho from './Components/Carrinho';
 
 
 
