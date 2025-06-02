@@ -7,6 +7,7 @@ import Login from './Components/Pages/Login';
 import Cadastro from './Components/Pages/Cadastro';
 import MeusPedidos from './Components/MeusPedidos/MeusPedidos';
 import Carrinho from './Components/Pages/Carrinho';
+import ProductViewPage from './Components/Pages/ProductViewPage';
 
 
 

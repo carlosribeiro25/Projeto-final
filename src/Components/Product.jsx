@@ -1,29 +1,34 @@
-import ProdutoCard from "./ProdutoCard";
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
-import { useState } from "react"
-import Carrinho, { adicionarAoCarrinho } from "../Components/Carrinho"
 
-export default function PaginaProduto() {
+
+import { useState } from "react";
+import Carrinho from '../Components/Pages/Carrinho';
+import { generateSessionId } from '../utils/cartUtils';
+import { adicionarAoCarrinho } from "../utils/cartActions";
+
+export default function Product() {
   const [isCartVisible, setIsCartVisible] = useState(false)
   const [selectedSize, setSelectedSize] = useState("")
   const [selectedColor, setSelectedColor] = useState("")
 
-  const handleComprar = async () => {
-    const productId = 7
-    const sucesso = await adicionarAoCarrinho(productId)
 
-    if (sucesso) {
-      setIsCartVisible(true)
-    } else {
-      alert("Erro ao adicionar produto ao carrinho")
-    }
+const handleComprar = async () => {
+  const sessionId = generateSessionId(); // cria ou obtém o ID da sessão
+  const productId = 7; // id fixo do produto, por enquanto
+  const quantity = 1;
+
+  try {
+    await adicionarAoCarrinho(sessionId, productId, quantity);
+    setIsCartVisible(true);
+  } catch (error) {
+    console.error("Erro ao adicionar produto ao carrinho:", error);
+    alert("Erro ao adicionar produto ao carrinho");
   }
+};
 
   return (
     <>
       <main className="produto-container">
-        <Header/>
+       
      
         <div className="breadcrumb">
           <span>Home / Produto / Tenis / Nike / Tênis Nike Revolution 6 Next Nature Masculino</span>
@@ -124,7 +129,7 @@ export default function PaginaProduto() {
 
       {/* Carrinho */}
       <Carrinho isVisible={isCartVisible} onClose={() => setIsCartVisible(false)} />
-        <Footer/>
+       
     </>
   )
 }
