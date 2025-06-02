@@ -2,7 +2,7 @@ import ProdutoCard from "./ProdutoCard";
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { useState } from "react"
-import Carrinho, { adicionarAoCarrinho } from "../components/Carrinho"
+import Carrinho, { adicionarAoCarrinho } from "../Components/Carrinho"
 
 export default function PaginaProduto() {
   const [isCartVisible, setIsCartVisible] = useState(false)
