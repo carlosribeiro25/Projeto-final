@@ -1,7 +1,7 @@
 import './Header.css';
 import Logo from '../Logo';
 import SearchBar from '../SearchBar';
-import Carrinho from '../Components/Carrinho';
+import Carrinho from '../Pages/Carrinho';
 import Navegation from '../Navegation';
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
