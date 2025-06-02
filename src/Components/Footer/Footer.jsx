@@ -18,15 +18,10 @@ export default function Footer() {
                             laborum commodi tenetur animi,a,inaiiiii 
                             
                              </p>
-                             <div className="rede-social flex flex-row gap-4">
-                               
-                                   
+                             <div className="rede-social flex flex-row gap-4">                                                                  
                                      <FacebookLogo size={36} />
-     
-                                        <InstagramLogo size={36} />
-      
+                                        <InstagramLogo size={36} />   
                                         <TwitterLogo size={36} />
-
                              </div>
                         </div>
                     </div>

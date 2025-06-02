@@ -25,7 +25,7 @@ const Navegation = () => {
           Produtos
         </NavLink>
         <NavLink
-          to="/ProductViewPage"
+          to="/Categorias"
           className={({ isActive }) =>
             isActive
               ? "text-[#C92071] border-b-2 border-[#C92071] pb-1"

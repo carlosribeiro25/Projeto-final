@@ -83,11 +83,11 @@ export default function Login() {
         height={250}
         className='mb-8'
         alt="shoes login digital college" />
-         <img src="https://bruno-gsilva.github.io/Drip_Store/DripStore_login/resources/images/shoes02.png" 
-        width={350}
-        height={250}
+          <img src="https://bruno-gsilva.github.io/Drip_Store/DripStore_login/resources/images/shoes02.png" 
+        width={350} 
+         height={250} 
         
-        alt="shoes login digital college" />
+         alt="shoes login digital college" /> 
      
 
        </section> 

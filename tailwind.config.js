@@ -1,9 +1,12 @@
-module.exports = {
+import forms from '@tailwindcss/forms';
+
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"], // ou conforme sua estrutura
   theme: {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/forms'), // ← adicione aqui
+    forms, // ← adicione aqui
   ],
 }

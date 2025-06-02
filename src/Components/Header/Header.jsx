@@ -5,6 +5,7 @@ import Carrinho from '../Components/Carrinho';
 import Navegation from '../Navegation';
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
+import { useState } from 'react';
 
 
 export default function Header() {

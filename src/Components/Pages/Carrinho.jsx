@@ -1,34 +1,18 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { createClient } from "@supabase/supabase-js"
 import styles from './Carrinho.module.css'
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY)
+const supabase = createClient(import.meta.env.NEXT_PUBLIC_SUPABASE_URL, import.meta.env.NEXT_PUBLIC_SUPABASE_ANON_KEY)
 
-function generateSessionId() {
-  if (typeof window === "undefined") return null
-  let sessionId = localStorage.getItem("cart_session_id")
-  if (!sessionId) {
-    sessionId = "session_" + Math.random().toString(36).substr(2, 9) + Date.now()
-    localStorage.setItem("cart_session_id", sessionId)
-  }
-  return sessionId
-}
+import { generateSessionId } from '../../utils/cartUtils'
 
 export default function Carrinho({ isVisible, onClose }) {
   const [cartItems, setCartItems] = useState([])
   const [loading, setLoading] = useState(false)
   const [sessionId, setSessionId] = useState(null)
 
-  useEffect(() => {
-    const id = generateSessionId()
-    setSessionId(id)
-    if (id && isVisible) {
-      fetchCartItems(id)
-    }
-  }, [isVisible])
-
-  const fetchCartItems = async (currentSessionId = sessionId) => {
+  const fetchCartItems = useCallback(async (currentSessionId = sessionId) => {
     if (!currentSessionId) return
 
     setLoading(true)
@@ -48,7 +32,15 @@ export default function Carrinho({ isVisible, onClose }) {
     } finally {
       setLoading(false)
     }
-  }
+  }, [sessionId])
+
+  useEffect(() => {
+    const id = generateSessionId()
+    setSessionId(id)
+    if (id && isVisible) {
+      fetchCartItems(id)
+    }
+  }, [isVisible, fetchCartItems])
 
   const updateQuantity = async (cartItemId, newQuantity) => {
     if (newQuantity <= 0) {
@@ -97,16 +89,19 @@ export default function Carrinho({ isVisible, onClose }) {
     return cartItems.reduce((total, item) => total + (item.product?.price || 0) * item.quantity, 0)
   }
 
-  const formatPrice = (price) => {
-    return new Intl.NumberFormat("pt-BR", {
-      style: "currency",
-      currency: "BRL",
-    }).format(price)
-  }
+const formatPrice = (price) => {
+  return new Intl.NumberFormat("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  }).format(price)
+}
 
- 
+const handleCheckout = () => {
+  // Implement checkout logic here
+  alert('Função de checkout será implementada em breve!')
+}
 
-  return (
+return (
    <>
   {/* Overlay */}
   <div className={`${styles["carrinho-overlay"]} ${isVisible ? styles["visible"] : ""}`} onClick={onClose} />
@@ -174,44 +169,5 @@ export default function Carrinho({ isVisible, onClose }) {
 </>
 
   )
-}
-
-// Função utilitária para adicionar produtos ao carrinho (use em outras páginas)
-export async function adicionarAoCarrinho(productId) {
-  const sessionId = generateSessionId()
-  if (!sessionId) return false
-
-  try {
-    // Verificar se já existe no carrinho
-    const { data: existingItems } = await supabase
-      .from("cart_items")
-      .select("*")
-      .eq("session_id", sessionId)
-      .eq("product_id", productId)
-
-    if (existingItems && existingItems.length > 0) {
-      // Atualizar quantidade
-      const { error } = await supabase
-        .from("cart_items")
-        .update({ quantity: existingItems[0].quantity + 1 })
-        .eq("id", existingItems[0].id)
-
-      if (error) throw error
-    } else {
-      // Adicionar novo item
-      const { error } = await supabase.from("cart_items").insert({
-        session_id: sessionId,
-        product_id: productId,
-        quantity: 1,
-      })
-
-      if (error) throw error
-    }
-
-    return true
-  } catch (error) {
-    console.error("Erro ao adicionar ao carrinho:", error)
-    return false
-  }
 }
 
