@@ -9,14 +9,14 @@ import Propaganda from '../Propaganda';
 export default function Gallery() {
   const slides = [
     {
-      imageUrl: "src/public/shoe-1.png",
+      imageUrl: "https://drip-store.netlify.app/assets/images/hero-carousel/shoe-1.png",
     },
     {
       imageUrl: "https://drip-store.netlify.app/assets/images/hero-carousel/shoe-2.png",
     
     },
      {
-      imageUrl: "src/public/shoe-4.png",
+      imageUrl: "https://drip-store.netlify.app/assets/images/hero-carousel/shoe-4.png",
     },
      {
       imageUrl: "src/public/shoes3.png",
@@ -45,7 +45,7 @@ export default function Gallery() {
       />
 
       <div className="w-20 h-20 md:w-24 md:h-24">
-        <img src="src/public/ornament.svg" alt="ornament" className="w-full h-full object-contain" />
+        <img src="https://drip-store.netlify.app/assets/images/hero-carousel/background-detail.png" alt="ornament" className="w-full h-full object-contain" />
       </div>
     </div>
   </div>
